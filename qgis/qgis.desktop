@@ -1,0 +1,7 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=QGIS
+Exec=sh -c "docker run --rm -d -v /tmp/.X11-unix/:/tmp/.X11-unix -e DISPLAY=$DISPLAY -v ~/.Xauthority:/tmp/.Xauthority:ro -e XAUTHORITY=/tmp/.Xauthority -h $(hostname) --name qgis qgis"
