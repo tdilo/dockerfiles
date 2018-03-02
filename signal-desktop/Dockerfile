@@ -7,6 +7,7 @@
 #   -v ~/.Xauthority:/tmp/.Xauthority:ro \
 #   -e XAUTHORITY=/tmp/.Xauthority \
 #   -h $(hostname) \
+#   -v $HOME/.config/Signal:/home/signal/.config/Signal:rw
 #   --name signal \
 #   signal
 #
