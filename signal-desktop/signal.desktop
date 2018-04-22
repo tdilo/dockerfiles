@@ -7,4 +7,4 @@ Version=1.0
 Terminal=false
 Type=Application
 Name=Signal
-Exec=sh -c "mkdir -p ~/.config/Signal && docker run --rm -d -v /tmp/.X11-unix/:/tmp/.X11-unix -e DISPLAY=$DISPLAY -v ~/.Xauthority:/tmp/.Xauthority:ro -e XAUTHORITY=/tmp/.Xauthority -h $(hostname) -v $HOME/.config/Signal:/home/signal/.config/Signal:rw --name signal signal"
+Exec=sh -c "mkdir -p ~/.config/Signal && docker run --rm -d -v /tmp/.X11-unix/:/tmp/.X11-unix -e DISPLAY=$DISPLAY -v ~/.Xauthority:/tmp/.Xauthority:ro -e XAUTHORITY=/tmp/.Xauthority -h $(hostname) -v $HOME/.config/Signal:/home/signal/.config/Signal:rw --ipc=host --name signal signal"

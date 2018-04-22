@@ -8,6 +8,7 @@
 #   -e XAUTHORITY=/tmp/.Xauthority \
 #   -h $(hostname) \
 #   -v $HOME/.config/Signal:/home/signal/.config/Signal:rw
+#   --ipc=host \
 #   --name signal \
 #   signal
 #
